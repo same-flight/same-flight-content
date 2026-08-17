@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "updatedAt": "2025-07-14T00:00:00Z",
+  "defaults": {
+    "theme": "default"
+  },
+  "themes": {
+    "default": {
+      "login": {
+        "logo": "https://linkyearth.github.io/linky-legal/assets/themes/default/logo.png",
+        "bckg": "https://linkyearth.github.io/linky-legal/assets/themes/default/bckg.png",
+        "title": "Pin your world, share your vibe, explore together",
+        "subtitle": "Join this adventure! Let's re-invent together a more human social technology"
+      },
+      "main": {
+        "logo": "https://linkyearth.github.io/linky-legal/assets/themes/default/logo.png"
+      }
+    },
+    "fr_bastille_day": {
+      "login": {
+        "logo": "https://linkyearth.github.io/linky-legal/assets/themes/fr_bastille_day/logo_fr4.png",
+        "bckg": "https://linkyearth.github.io/linky-legal/assets/themes/fr_bastille_day/bckg.png",
+        "title": "Pin your world, share your vibe, vive la France 🇫🇷",
+        "subtitle": "Celebrate liberty, unity and enjoy together"
+      },
+      "main": {
+        "logo": "https://linkyearth.github.io/linky-legal/assets/themes/fr_bastille_day/logo_fr4.png"
+      }
+    },
+    "us_independence_day": {
+      "login": {
+        "logo": "https://linkyearth.github.io/linky-legal/assets/themes/us_independence_day/logo_usa1.png",
+        "bckg": "https://linkyearth.github.io/linky-legal/assets/themes/us_independence_day/bckg.png",
+        "title": "Pin your world, share your vibe, celebrate freedom 🇺🇸",
+        "subtitle": "On Independence Day, we honor connection, diversity, and the freedom to belong."
+      },
+      "main": {
+        "logo": "https://linkyearth.github.io/linky-legal/assets/themes/us_independence_day/logo_usa1.png"
+      }
+    }
+  },
+  "rules": [
+    {
+      "id": "fr_bastille_day",
+      "priority": 100,
+      "match": {
+        "country": [
+          "FR", "IL"
+        ],
+        "date": {
+          "from": "12-26",
+          "to": "12-26"
+        }
+      },
+      "theme": "fr_bastille_day"
+    },
+    {
+      "id": "us_independence_day",
+      "priority": 100,
+      "match": {
+        "country": [
+          "US", "IL"
+        ],
+        "date": {
+          "from": "12-27",
+          "to": "12-27"
+        }
+      },
+      "theme": "us_independence_day"
+    }
+  ]
+}
